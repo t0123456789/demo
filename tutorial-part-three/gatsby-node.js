@@ -20,6 +20,11 @@ exports.onCreateNode = ({ node }) => {
 
 
 const path = require(`path`)
+const express= require('express');
+
+exports.onCreateDevServer=({app})=>{
+    app.use(express.static('public'))
+}
 
 
 // gatsby-source-filesystem plugin ships with an API function for creating slugs

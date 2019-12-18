@@ -30,6 +30,8 @@ Then can access data via graphQL query, like in viewer at localhost:8000/__graph
 
 module.exports = {
 
+  pathPrefix: "/demo",
+
   siteMetadata: {
     title: `DemoSite`,
     description: `A test website with game demos made with Unity.`,
